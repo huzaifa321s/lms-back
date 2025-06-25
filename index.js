@@ -32,7 +32,7 @@ app.use(express.urlencoded({ limit: "60mb", extended: true }))
 app.use(fileUpload())
 
 // Static files
-app.use("/public", express.static(path.join(__dirname, "public")))
+app.use(express.static(path.join(__dirname, "public")))
 
 // Routes
 app.use("/api/webhook", webhookRoutes)
