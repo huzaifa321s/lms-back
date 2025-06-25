@@ -38,7 +38,7 @@ app.use(express.urlencoded({ limit: "60mb", extended: true }));
 app.use(fileUpload());
 
 // Static files
-app.use("/public", express.static("public"));
+app.use("/public", express.static(path.join(__dirname, "public")));
 
 // API routes.
 app.use("/api/web", webRoutes)
