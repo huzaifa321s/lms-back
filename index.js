@@ -48,4 +48,4 @@ app.use("/api/student", studentRoutes);
 app.use("/api/test", testRoutes);
 
 app.get("/", async (_, res) => res.send('Bruce LMS server live!'));
-app.listen(PORT, () => console.log(`listening at ${PORT}`));
+export default app
